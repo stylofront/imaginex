@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* ══════════════════════════════════════════════════════════
    IMAGINEX — DESIGN SYSTEM
    CSS Custom Properties (Light by default, Midnight in .dark)

@@ -88,7 +88,7 @@ export function PwaInstallBanner() {
   if (!isVisible || isInstalled) return null;
 
   return (
-    <div className="w-full bg-gradient-to-r from-violet-500/10 via-blue-500/10 to-violet-500/10 dark:from-[#101323] dark:via-[#161B32] dark:to-[#101323] border-b border-violet-500/20 text-xs py-2 px-3 sm:px-6 transition-all duration-300">
+    <div className="w-full bg-[var(--bg-secondary)] border-b border-[var(--border)] text-[var(--text-primary)] text-xs py-2 px-3 sm:px-6 transition-colors shadow-xs relative z-30">
       <div className="max-w-7xl 2xl:max-w-[1700px] mx-auto flex items-center justify-between gap-3">
         {/* Left: App Identity */}
         <div className="flex items-center gap-2.5 min-w-0">

@@ -160,9 +160,9 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 w-full transition-colors">
+    <header className="sticky top-0 z-50 w-full transition-colors bg-[var(--bg-primary)]">
       <PwaInstallBanner />
-      <div className="w-full bg-[var(--bg-primary)]/95 backdrop-blur-xl border-b border-[var(--border)] shadow-xs">
+      <div className="w-full bg-[var(--bg-primary)] border-b border-[var(--border)] shadow-xs transition-colors">
         <div className="max-w-7xl 2xl:max-w-[1700px] mx-auto px-3 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo & Brand */}
@@ -218,7 +218,7 @@ export function Navbar() {
               {/* Mega Dropdown Panel with Hover Bridge */}
               {isToolsDropdownOpen && (
                 <div className="absolute top-full left-[-40px] xl:left-[-100px] pt-2 w-[860px] xl:w-[920px] max-w-[calc(100vw-2rem)] z-50">
-                  <div className="p-5 sm:p-6 bg-[var(--bg-elevated)]/98 dark:bg-[#101321]/98 backdrop-blur-2xl border border-[var(--border)] rounded-xl shadow-xl shadow-black/10 dark:shadow-black/70 animate-in fade-in slide-in-from-top-2 duration-200">
+                  <div className="p-5 sm:p-6 bg-[var(--bg-elevated)] border border-[var(--border)] rounded-xl shadow-2xl shadow-black/20 transition-colors animate-in fade-in slide-in-from-top-2 duration-200">
                     {/* 3 Balanced Columns */}
                     <div className="grid grid-cols-3 gap-5">
                       {TOOL_GROUPS.map((group, groupIndex) => (
@@ -378,7 +378,7 @@ export function Navbar() {
 
       {/* Mobile Drawer */}
       {isMobileMenuOpen && (
-        <div className="lg:hidden border-b border-[var(--border)] bg-[var(--bg-primary)]/98 backdrop-blur-2xl px-4 py-6 space-y-4 animate-in slide-in-from-top duration-200 max-h-[85vh] overflow-y-auto">
+        <div className="lg:hidden border-b border-[var(--border)] bg-[var(--bg-primary)] px-4 py-6 space-y-4 animate-in slide-in-from-top duration-200 max-h-[85vh] overflow-y-auto shadow-2xl transition-colors">
           {TOOL_GROUPS.map((group) => (
             <div key={group.category} className="space-y-1">
               <div className="px-3 py-1 text-xs font-mono uppercase tracking-wider text-[var(--text-muted)] flex items-center justify-between">
